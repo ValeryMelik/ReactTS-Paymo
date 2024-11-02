@@ -1,0 +1,91 @@
+@use '../tools/index';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: 400 16px / 20px VTB-Group, sans-serif;
+  color: index.$content-grey;
+
+  background-color: index.$background-main;
+}
+
+svg {
+  flex-shrink: 0;
+  transition: fill 0.3s ease-in-out, stroke 0.3s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.img-reset {
+  display: block;
+
+  flex-shrink: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.title-reset {
+  margin: 0;
+
+  color: index.$content-black;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 28px;
+
+}
+
+.btn-reset {
+  background-color: transparent;
+
+  font-weight: 500;
+
+  border: none;
+  cursor: pointer;
+
+  padding: 0;
+
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+.link-reset {
+  color: inherit;
+  text-decoration: none;
+
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  // &:hover,
+  // &:focus {
+  //   color: index.$grey;
+  // }
+  // &:active {
+  //   color: index.$primary;
+  // }
+}
+
+.margin-reset {
+  margin: 0;
+  padding: 0;
+}
+
+.list-reset {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}

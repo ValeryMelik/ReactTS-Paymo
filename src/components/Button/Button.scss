@@ -1,0 +1,49 @@
+@use '../../scss/tools/index';
+
+.btn {
+  padding: 16px 24px;
+
+  min-width: 140px;
+  border-radius: 12px;
+
+  &[data-kind='primary'] {
+    background-color: index.$primary;
+    color: index.$content-white;
+
+    // &:disabled {
+    //   color: index.$grey-dark !important;
+    //   background-color: index.$grey-light !important;
+    // }
+
+    // &:hover {
+    //   color: index.$white;
+    //   background-color: index.$grey-light;
+    //   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    // }
+
+    // &:active {
+    //   background-color: index.$grey-dark;
+    // }
+  }
+
+  &[data-kind='secondary'] {
+    background-color: index.$secondary;
+    color: index.$primary;
+
+    // &:disabled {
+    //   color: index.$disabled !important;
+    //   background-color: index.$black-disabled !important;
+
+    //   cursor: not-allowed;
+    // }
+
+    // &:hover {
+    //   color: index.$content-black;
+    //   background-color: index.$white;
+
+    //   svg {
+    //     fill: index.$content-black;
+    //   }
+    // }
+  }
+}

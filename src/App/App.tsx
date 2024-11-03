@@ -14,8 +14,8 @@ const App: FC = () => {
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
         <Routes>
-          <Route path='/' element={<Base />} />
-          <Route path="/transaction-error" element={<TransactionError />} />
+          <Route path='ReactTS-Paymo/' element={<Base />} />
+          <Route path="ReactTS-Paymo/transaction-error" element={<TransactionError />} />
         </Routes>
       </QueryClientProvider>
     </BrowserRouter>

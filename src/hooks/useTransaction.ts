@@ -37,7 +37,7 @@ const useTransaction = (): UseMutationResult<any, Error, ITransactionInput> => {
       }
     },
     onError: (error: any): void => {
-      navigate('/transaction-error', {
+      navigate('/ReactTS-Paymo/transaction-error', {
         state: { payload: error.payload, error: error.error },
       });
     },
